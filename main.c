@@ -1,9 +1,3 @@
-//#include <stdio.h>
-//
-//    int main(void) {
-//        printf("Hello World!\n");
-//        return 0;
-//    }
                                                         /*2 лаба 1 задание*//*
                                                 
 #include <stdio.h>
