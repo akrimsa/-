@@ -1,134 +1,4 @@
-                                                        /*2 лаба 1 задание*//*
-                                                
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(void) {
-    float p, v, s;
-    p = 3.14;
-    float a;
-    float b;
-    int flag_user_correct_input = 0;
-    printf("Введите диаметр: ");
-    scanf("%f", &a);
-    do {
-        if (a <= 0) {
-            printf("Вы ввели некоректное число");
-            break;
-        }
-        printf("Введите высоту: ");
-        scanf("%f", &b);
-        if (b <= 0) {
-            printf("Вы ввели некоректное число \n");
-            break;
-        }
-        if (a > 0 && b > 0) {    
-            v = a*b;
-            s = 2*p*b + 2*a;
-            printf("Объем цилиндра равен %f \n Площадь поверхности цилиндра равна %f\n", v, s);
-            flag_user_correct_input = 1;
-        }
-        
-    }while ( flag_user_correct_input == 0);    
-    return 0;
-}
-
-                                                            *//*2лаба 2 задание*//*
-                                                            
-#include <stdio.h>
-#include <math.h>
-int main() {
-    int operation_number;
-    double result, first_number, second_number;
-    printf("Введите два числ и номер операции.\n");
-    printf("Введите первое число:");
-    scanf("%lf", &first_number);
-    printf("Введите второе число:");
-    scanf("%lf", &second_number);
-    printf("Введите номер операции:");
-    scanf("%d", &operation_number);
-    if (operation_number == 1.0) {
-        result = first_number + second_number;
-        printf("Результат равен %lf\n", result);
-    }
-
-    if (operation_number == 2.0) {
-        result = first_number - second_number;
-        printf("Результат равен %lf\n", result);
-    }
-
-    if (operation_number == 3.0) {
-        result = first_number * second_number;
-        printf("Результат равен %lf\n", result);
-    }
-
-    if (operation_number == 4.0) {
-        result = first_number / second_number;
-        printf("Результат равен %.4lf\n", result);
-    }
-}
-
-                                                            *//*2лаба 3 задание*//*
-#include <stdio.h>
-#include <math.h>
-int main() {
-    int students_points;
-    printf("Введите баллы студента\n");
-    scanf("%d", students_points);
-    if (students_points < 60) {
-        printf("Незачет.\n");
-
-    }
-    if (students_points >= 60 && students_points < 75) {
-        printf("Оценка 3, зачет.\n");
-    }
-    if (students_points >= 75 && students_points < 90) {
-        printf("Оценка 4, зачет.\n");
-    }
-    if (students_points >= 90 && students_points < 101) {
-        printf("Оценка 5, зачет.\n");
-    }
-    printf("Некорректный ввод.");
-
-
-}
-
-                                                            *//*2лаба 4 задание*//*
-#include <stdio.h>
-#include <math.h>
-int main() {
-    float diametr_of_the_bolt_head, hole_diameter, diametr__of_the_bolt_leg;
-    do {
-        printf("Введите диаметр отверстия\n ");
-        scanf("%f", &hole_diameter);
-        printf("Введите диаметр шляпки болта\n ");
-        scanf("%f", &diametr_of_the_bolt_head);    
-        printf("Введите диаметр ножки болта\n ");
-        scanf("%f", &diametr__of_the_bolt_leg);
-    
-        if (hole_diameter > diametr__of_the_bolt_leg && hole_diameter >= diametr_of_the_bolt_head) {
-            printf("Ваш болт вылетел из отверстия, шляпка меньше отверстия.\n");
-            break;
-        }
-        
-        if (hole_diameter <= diametr__of_the_bolt_leg ){
-            printf("Ваш болт невлезает, ножка больше отверстия.\n");
-            break;
-        }
-        if (hole_diameter < diametr__of_the_bolt_leg && hole_diameter < diametr_of_the_bolt_head) {
-            printf("Ваш болт сидит четко.\n");
-            break;
-        }
-    
-        printf("Некорректный ввод.\n");
-    }while (&trunc);
-
-}   
-
-
-
-
-                                                            *//*1лаба 1 задание*//*
+                                                            /*1лаба 1 задание*//*
 
 #include <stdio.h>
 #include <math.h>
@@ -315,6 +185,164 @@ int main() {
 
 /*
 
+
+
+
+
+
+
+                                                                          /*2 лаба 1 задание*//*
+                                                
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    float p, v, s;
+    p = 3.14;
+    float a;
+    float b;
+    int flag_user_correct_input = 0;
+    printf("Введите диаметр: ");
+    scanf("%f", &a);
+    do {
+        if (a <= 0) {
+            printf("Вы ввели некоректное число");
+            break;
+        }
+        printf("Введите высоту: ");
+        scanf("%f", &b);
+        if (b <= 0) {
+            printf("Вы ввели некоректное число \n");
+            break;
+        }
+        if (a > 0 && b > 0) {    
+            v = a*b;
+            s = 2*p*b + 2*a;
+            printf("Объем цилиндра равен %f \n Площадь поверхности цилиндра равна %f\n", v, s);
+            flag_user_correct_input = 1;
+        }
+        
+    }while ( flag_user_correct_input == 0);    
+    return 0;
+}
+
+                                                            *//*2лаба 2 задание*//*
+                                                            
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int operation_number;
+    double result, first_number, second_number;
+    printf("Введите два числ и номер операции.\n");
+    printf("Введите первое число:");
+    scanf("%lf", &first_number);
+    printf("Введите второе число:");
+    scanf("%lf", &second_number);
+    printf("Введите номер операции:");
+    scanf("%d", &operation_number);
+    if (operation_number == 1.0) {
+        result = first_number + second_number;
+        printf("Результат равен %lf\n", result);
+    }
+
+    if (operation_number == 2.0) {
+        result = first_number - second_number;
+        printf("Результат равен %lf\n", result);
+    }
+
+    if (operation_number == 3.0) {
+        result = first_number * second_number;
+        printf("Результат равен %lf\n", result);
+    }
+
+    if (operation_number == 4.0) {
+        result = first_number / second_number;
+        printf("Результат равен %.4lf\n", result);
+    }
+}
+
+                                                            *//*2лаба 3 задание*//*
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int students_points;
+    printf("Введите баллы студента\n");
+    scanf("%d", students_points);
+    if (students_points < 60) {
+        printf("Незачет.\n");
+
+    }
+    if (students_points >= 60 && students_points < 75) {
+        printf("Оценка 3, зачет.\n");
+    }
+    if (students_points >= 75 && students_points < 90) {
+        printf("Оценка 4, зачет.\n");
+    }
+    if (students_points >= 90 && students_points < 101) {
+        printf("Оценка 5, зачет.\n");
+    }
+    printf("Некорректный ввод.");
+
+
+}
+
+                                                            *//*2лаба 4 задание*//*
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float diametr_of_the_bolt_head, hole_diameter, diametr__of_the_bolt_leg;
+    do {
+        printf("Введите диаметр отверстия\n ");
+        scanf("%f", &hole_diameter);
+        printf("Введите диаметр шляпки болта\n ");
+        scanf("%f", &diametr_of_the_bolt_head);    
+        printf("Введите диаметр ножки болта\n ");
+        scanf("%f", &diametr__of_the_bolt_leg);
+    
+        if (hole_diameter > diametr__of_the_bolt_leg && hole_diameter >= diametr_of_the_bolt_head) {
+            printf("Ваш болт вылетел из отверстия, шляпка меньше отверстия.\n");
+            break;
+        }
+        
+        if (hole_diameter <= diametr__of_the_bolt_leg ){
+            printf("Ваш болт невлезает, ножка больше отверстия.\n");
+            break;
+        }
+        if (hole_diameter < diametr__of_the_bolt_leg && hole_diameter < diametr_of_the_bolt_head) {
+            printf("Ваш болт сидит четко.\n");
+            break;
+        }
+    
+        printf("Некорректный ввод.\n");
+    }while (&trunc);
+
+}   
+
+
+
+
+
+                                                                    
+
+
+
+
+//#include <stdio.h>
+//#include <math.h> // For sin() and M_PI
+
+//int main(void) {
+//    double angle_degrees = 45.0;
+//    double angle_radians = angle_degrees * (M_PI / 180.0);
+//    double sine_value = sin(angle_radians);
+//
+//    printf("Sine of %.2f degrees (%.2f radians) is: %.4f\n", angle_degrees, angle_radians, sine_value);
+//
+//    return 0;
+//}
+
+
+/*
+
 #include <stdio.h>
 
 int main(int argc, char* argv[]) {
@@ -334,9 +362,9 @@ int main(int argc, char* argv[]) {
 }
 
 
-*/
 
-                                            /*3 лаба 1 задание*//*
+
+                                            *//*3 лаба 1 задание*//*
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
